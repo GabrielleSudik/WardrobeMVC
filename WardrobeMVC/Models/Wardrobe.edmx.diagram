@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fd714808b6d448b2aafe40c4fb5fa94f" Name="Diagram1">
+        <EntityTypeShape EntityType="WardrobeMVCModel.Accessory" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Bottom" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Foot" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Outfit" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Recommendation" Width="1.5" PointX="6" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Top" Width="1.5" PointX="0.75" PointY="14" IsExpanded="true" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfits_Accessories" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Recommendations_Accessories" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfits_Bottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfits_Feet" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Recommendations_Feet" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfits_Tops" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
