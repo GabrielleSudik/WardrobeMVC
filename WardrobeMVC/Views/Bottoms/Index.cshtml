@@ -4,11 +4,9 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Bodacious Bottoms</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <table class="table">
     <tr>
         <th>
@@ -38,7 +36,9 @@
             @Html.DisplayFor(modelItem => item.TopName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Photo)
+            @*@Html.DisplayFor(modelItem => item.Photo)*@
+            <img id="clothingInList" src=@Url.Content(item.Photo) class="img-responsive">
+
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Type)
@@ -61,3 +61,7 @@
 }
 
 </table>
+
+<p>
+    @Html.ActionLink("Add More Bottoms!", "Create")
+</p>
