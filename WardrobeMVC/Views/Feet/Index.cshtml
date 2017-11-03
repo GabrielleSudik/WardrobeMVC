@@ -37,8 +37,16 @@
         <td>
             @Html.DisplayFor(modelItem => item.ShoeName)
         </td>
+
+        @*you're about to tinker with this, to get photos to show:*@
         <td>
-            @Html.DisplayFor(modelItem => item.Photo)
+            @*original line:*@
+            @*@Html.DisplayFor(modelItem => item.Photo)*@
+
+            @*attempts: anything coded out doesn't work*@
+            @*@Url.Content(Model.Photo)*@
+            <img id="clothingInList" src=@Url.Content(item.Photo) class="img-responsive">
+
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Type)

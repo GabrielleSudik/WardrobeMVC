@@ -22,8 +22,11 @@ namespace WardrobeMVC.Models
             this.Recommendations = new HashSet<Recommendation>();
         }
     
+        //you added a key because you got an error message that there was no key
+        //despite the fact that there WAS a key
         [Key]
         public int FeetID { get; set; }
+        [Display(Name = "Feet")]
         public string ShoeName { get; set; }
         public string Photo { get; set; }
         public string Type { get; set; }

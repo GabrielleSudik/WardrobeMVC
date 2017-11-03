@@ -20,10 +20,16 @@
 
         <dt>
             @Html.DisplayNameFor(model => model.Photo)
+
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Photo)
+            @*you're editing the following:*@
+            @*@Html.DisplayFor(model => model.Photo)*@
+
+            @*here's your new stuff:*@
+            <img id="clothingInDetail" src=@Url.Content(Model.Photo) class="img-responsive">
+
         </dd>
 
         <dt>
