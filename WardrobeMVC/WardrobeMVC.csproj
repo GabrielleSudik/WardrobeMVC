@@ -178,21 +178,27 @@
     <Compile Include="Models\Accessory.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccessoryMetaData.cs" />
     <Compile Include="Models\Bottom.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\BottomMetaData.cs" />
     <Compile Include="Models\Foot.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\FootMetaData.cs" />
     <Compile Include="Models\Outfit.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\OutfitMetaData.cs" />
     <Compile Include="Models\Recommendation.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\RecommendationMetaData.cs" />
     <Compile Include="Models\Top.cs">
       <DependentUpon>Wardrobe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TopMetaData.cs" />
     <Compile Include="Models\Wardrobe.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -216,6 +222,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bottombellyskirt.jpg" />
+    <Content Include="Content\bottomfishnets.jpg" />
+    <Content Include="Content\flairtophat.jpg" />
+    <Content Include="Content\flairveil.jpg" />
+    <Content Include="Content\topbrassier.jpg" />
+    <Content Include="Content\toptuxjacket.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

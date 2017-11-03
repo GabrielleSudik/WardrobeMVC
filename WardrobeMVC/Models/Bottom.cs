@@ -24,7 +24,7 @@ namespace WardrobeMVC.Models
         public int BottomID { get; set; }
 
         //you added this here, despite warnings not to
-        [Display(Name ="Bottom")]
+        //[Display(Name ="Bottom")]
         public string TopName { get; set; }
         public string Photo { get; set; }
         public string Type { get; set; }

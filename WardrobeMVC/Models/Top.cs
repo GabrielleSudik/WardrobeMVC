@@ -23,7 +23,7 @@ namespace WardrobeMVC.Models
     
 
         public int TopID { get; set; }
-        [Display(Name = "Top")]
+        //[Display(Name = "Top")]
         public string TopName { get; set; }
         public string Photo { get; set; }
         public string Type { get; set; }

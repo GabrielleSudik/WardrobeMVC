@@ -24,9 +24,14 @@ namespace WardrobeMVC.Models
     
         //you added a key because you got an error message that there was no key
         //despite the fact that there WAS a key
-        [Key]
+
+        //later: you commented out the edits and put them in the FootMetaData class
+        //BUT the changes didn't "take" in the buddy class
+        //maybe because you initially named it wrong?
+
+        //[Key]
         public int FeetID { get; set; }
-        [Display(Name = "Feet")]
+        //[Display(Name = "Feet")]
         public string ShoeName { get; set; }
         public string Photo { get; set; }
         public string Type { get; set; }

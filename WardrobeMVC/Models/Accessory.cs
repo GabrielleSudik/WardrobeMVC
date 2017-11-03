@@ -24,7 +24,7 @@ namespace WardrobeMVC.Models
     
         public int AccessoryID { get; set; }
 
-        [Display(Name = "Flair")]
+        //[Display(Name = "Flair")]
         public string AccessoryName { get; set; }
         public string Photo { get; set; }
         public string Type { get; set; }
