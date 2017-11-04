@@ -218,17 +218,32 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-cyborg.css" />
+    <Content Include="Content\bootstrap-flatly.css" />
+    <Content Include="Content\bootstrap-lux.css" />
+    <Content Include="Content\bootstrap-minty.css" />
+    <Content Include="Content\bootstrap-solar.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bottomballroomskirt.jpg" />
     <Content Include="Content\bottombellyskirt.jpg" />
     <Content Include="Content\bottombootyshorts.jpg" />
     <Content Include="Content\bottomfishnets.jpg" />
+    <Content Include="Content\bottomirishskirt.jpg" />
+    <Content Include="Content\bottomtutu.jpg" />
+    <Content Include="Content\flairirishhat.jpg" />
     <Content Include="Content\flairkneepad.jpg" />
+    <Content Include="Content\flairrose.jpg" />
+    <Content Include="Content\flairtiara.jpg" />
     <Content Include="Content\flairtophat.jpg" />
     <Content Include="Content\flairveil.jpg" />
+    <Content Include="Content\shoesirish.jpg" />
+    <Content Include="Content\topballroomshirt.jpg" />
     <Content Include="Content\topbrassier.jpg" />
+    <Content Include="Content\topirishjacket.jpg" />
+    <Content Include="Content\topleotard.jpg" />
     <Content Include="Content\topsilverjacket.jpg" />
     <Content Include="Content\toptuxjacket.jpg" />
     <Content Include="favicon.ico" />

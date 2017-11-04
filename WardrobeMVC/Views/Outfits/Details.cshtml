@@ -4,18 +4,28 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>@Html.DisplayFor(model => model.OutfitName)
+</h2>
+@*can that title be the name of the outfit?
+to try, you copied the razor from below. WORKED*@
+
+@*next, try changing name of item to photo of item. WORKED*@
 
 <div>
-    <h4>Outfit</h4>
+    @*<h4>Outfit</h4>*@
     <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
         </dt>
 
+        @*you're changing "ThingName" to "Photo" in each row*@
+        @*and adding the img syntax instead of displaying text*@
+
         <dd>
-            @Html.DisplayFor(model => model.Accessory.AccessoryName)
+            @*@Html.DisplayFor(model => model.Accessory.Photo)*@
+            <img id="clothingInDetail" src=@Url.Content(Model.Accessory.Photo) class="img-responsive">
+
         </dd>
 
         <dt>
@@ -23,7 +33,9 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Bottom.TopName)
+            @*@Html.DisplayFor(model => model.Bottom.Photo)*@
+            <img id="clothingInDetail" src=@Url.Content(Model.Bottom.Photo) class="img-responsive">
+
         </dd>
 
         <dt>
@@ -31,7 +43,9 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Foot.ShoeName)
+            @*@Html.DisplayFor(model => model.Foot.Photo)*@
+            <img id="clothingInDetail" src=@Url.Content(Model.Foot.Photo) class="img-responsive">
+
         </dd>
 
         <dt>
@@ -39,20 +53,24 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Top.TopName)
+            @*@Html.DisplayFor(model => model.Top.Photo)*@
+            <img id="clothingInDetail" src=@Url.Content(Model.Top.Photo) class="img-responsive">
+
         </dd>
 
-        <dt>
+        @*if change to headline worked, you can delete this part totally. DONE*@
+
+        @*<dt>
             @Html.DisplayNameFor(model => model.OutfitName)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.OutfitName)
-        </dd>
+        </dd>*@
 
     </dl>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to all Outfits", "Index")
 </p>

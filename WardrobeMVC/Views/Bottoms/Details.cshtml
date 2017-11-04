@@ -4,10 +4,13 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>@Html.DisplayFor(model => model.TopName)
+
+
+</h2>
 
 <div>
-    <h4>Bottom</h4>
+    @*<h4>Bottom</h4>*@
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -23,7 +26,9 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Photo)
+            @*@Html.DisplayFor(model => model.Photo)*@
+            <img id="clothingInDetail" src=@Url.Content(Model.Photo) class="img-responsive">
+
         </dd>
 
         <dt>
