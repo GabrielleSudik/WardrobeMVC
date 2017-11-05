@@ -9,22 +9,24 @@
 
 </h2>
 
+@*you're going to remove the titles, try to reorg the info at the bottom of the pic.*@
+
 <div>
     @*<h4>Foot</h4>*@
     <hr />
     <dl class="dl-horizontal">
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.ShoeName)
-        </dt>
+        </dt>*@
 
-        <dd>
+        @*<dd>
             @Html.DisplayFor(model => model.ShoeName)
-        </dd>
+        </dd>*@
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Photo)
 
-        </dt>
+        </dt>*@
 
         <dd>
             @*you're editing the following:*@
@@ -35,32 +37,33 @@
 
         </dd>
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Type)
-        </dt>
+        </dt>*@
 
         <dd>
-            @Html.DisplayFor(model => model.Type)
+            @Html.DisplayFor(model => model.Color) @Html.DisplayFor(model => model.Style) @Html.DisplayFor(model => model.Type) 
         </dd>
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Color)
-        </dt>
+        </dt>*@
 
-        <dd>
+        @*<dd>
             @Html.DisplayFor(model => model.Color)
-        </dd>
+        </dd>*@
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Style)
-        </dt>
+        </dt>*@
 
-        <dd>
+        @*<dd>
             @Html.DisplayFor(model => model.Style)
-        </dd>
+        </dd>*@
 
         <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
+            @*@Html.DisplayNameFor(model => model.Occasion)*@
+            Recommended for: 
         </dt>
 
         <dd>
@@ -71,5 +74,5 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.FeetID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to All Shoes", "Index")
 </p>

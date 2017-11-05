@@ -3,12 +3,20 @@
     padding-bottom: 20px;
     /*your new font:*/
     font-family: 'Cinzel', serif;
+    /*background-color: #88CC88; /*light green*/
+    /*color: #004400; /*dark green*/
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.navbar {
+    /*background-color: #004400; /*dark green*/
+    /*color: #88CC88; /*light green*/
+    /*font-size: 120%;*/
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -27,4 +35,29 @@ textarea {
 
 .clothingInList{
     max-width: 250px;
+}
+
+.lead{
+    /*font-size: 120%;*/
+}
+
+.topsIntro {
+    background-image: url('p1topsintro.jpg');
+}
+
+.bottomIntro {
+    background-image: url('p1bottomsintro.jpg');
+}
+
+.feetIntro {
+    background-image: url('p1shoesintro.jpg');
+}
+
+.flairIntro {
+    background-image: url('p1flairintro.jpg');
+}
+
+footer{
+    /*background-color: #004400; /*dark green*/
+    /*color: #88CC88; /*light green*/
 }

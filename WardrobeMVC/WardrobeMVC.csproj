@@ -239,6 +239,10 @@
     <Content Include="Content\flairtiara.jpg" />
     <Content Include="Content\flairtophat.jpg" />
     <Content Include="Content\flairveil.jpg" />
+    <Content Include="Content\p1bottomsintro.jpg" />
+    <Content Include="Content\p1flairintro.jpg" />
+    <Content Include="Content\p1shoesintro.jpg" />
+    <Content Include="Content\p1topsintro.jpg" />
     <Content Include="Content\shoesirish.jpg" />
     <Content Include="Content\topballroomshirt.jpg" />
     <Content Include="Content\topbrassier.jpg" />

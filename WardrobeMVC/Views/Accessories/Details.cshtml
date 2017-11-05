@@ -13,17 +13,17 @@
     @*<h4>Accessory</h4>*@
     <hr />
     <dl class="dl-horizontal">
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.AccessoryName)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.AccessoryName)
-        </dd>
+        </dd>*@
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+        </dt>*@
 
         <dd>
             @*@Html.DisplayFor(model => model.Photo)*@
@@ -31,33 +31,33 @@
 
         </dd>
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Type)
-        </dt>
+        </dt>*@
 
         <dd>
-            @Html.DisplayFor(model => model.Type)
+            @Html.DisplayFor(model => model.Color) @Html.DisplayFor(model => model.Style) @Html.DisplayFor(model => model.Type)
         </dd>
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Color)
-        </dt>
+        </dt>*@
 
-        <dd>
+        @*<dd>
             @Html.DisplayFor(model => model.Color)
-        </dd>
+        </dd>*@
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Style)
-        </dt>
+        </dt>*@
 
-        <dd>
+        @*<dd>
             @Html.DisplayFor(model => model.Style)
-        </dd>
+        </dd>*@
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
+        </dt>*@
 
         <dd>
             @Html.DisplayFor(model => model.Occasion)
@@ -67,5 +67,5 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to All Flair", "Index")
 </p>
