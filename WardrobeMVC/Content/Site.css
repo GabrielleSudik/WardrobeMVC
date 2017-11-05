@@ -3,7 +3,7 @@
     padding-bottom: 20px;
     /*your new font:*/
     font-family: 'Cinzel', serif;
-    font-size: 120%;
+    font-size: 150%;
     /*background-color: #88CC88; /*light green*/
     /*color: #004400; /*dark green*/
 }
@@ -17,9 +17,23 @@
 .navbar {
     /*background-color: #004400; /*dark green*/
     /*color: #88CC88; /*light green*/
-    /*font-size: 120%;*/
+    font-size: 120%;
 }
 
+.navbar-brand{
+    font-size: 170%;
+}
+
+.center{
+    text-align: center;
+}
+
+.table{
+    font-size: 150%;
+}
+.Jumbotron{
+
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -42,23 +56,38 @@ textarea {
     /*font-size: 120%;*/
 }
 
+.fourIntro{
+    text-align: center;
+}
 .topsIntro {
-    background-image: url('p1topsintro.jpg');
+    /*background-image: url('p1topsintro.jpg');*/
 }
 
 .bottomIntro {
-    background-image: url('p1bottomsintro.jpg');
+    /*background-image: url('p1bottomsintro.jpg');*/
 }
 
 .feetIntro {
-    background-image: url('p1shoesintro.jpg');
+    /*background-image: url('p1shoesintro.jpg');*/
 }
 
 .flairIntro {
-    background-image: url('p1flairintro.jpg');
+    /*background-image: url('p1flairintro.jpg');*/
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    border: black;
+    border-radius: 50%;
+}
+
+.btn:hover{
+    background-color: darkgray;
 }
 
 footer{
     /*background-color: #004400; /*dark green*/
     /*color: #88CC88; /*light green*/
+    font-size: 150%;
 }

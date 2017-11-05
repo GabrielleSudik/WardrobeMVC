@@ -10,12 +10,14 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.TopName)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Photo)
         </th>
         <th>
+            @*@Html.DisplayNameFor(model => model.TopName)*@
+            Details
+        </th>
+
+        @*<th>
             @Html.DisplayNameFor(model => model.Type)
         </th>
         <th>
@@ -23,24 +25,28 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Style)
+        </th>*@
+        <th>
+            @*@Html.DisplayNameFor(model => model.Occasion)*@
+            Recommended for
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Occasion)
+            @*blank for editing tools*@
         </th>
-        <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopName)
-        </td>
         <td>
             @*@Html.DisplayFor(modelItem => item.Photo)*@
             <img id="clothingInList" src=@Url.Content(item.Photo) class="img-responsive">
 
         </td>
         <td>
+            @Html.ActionLink(item.TopName, "Details", new { id = item.TopID })
+        </td>
+        
+        @*<td>
             @Html.DisplayFor(modelItem => item.Type)
         </td>
         <td>
@@ -48,13 +54,13 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Style)
-        </td>
+        </td>*@
         <td>
             @Html.DisplayFor(modelItem => item.Occasion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TopID }) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) <br/>
+            @*@Html.ActionLink("Details", "Details", new { id=item.TopID }) |*@
             @Html.ActionLink("Delete", "Delete", new { id=item.TopID })
         </td>
     </tr>

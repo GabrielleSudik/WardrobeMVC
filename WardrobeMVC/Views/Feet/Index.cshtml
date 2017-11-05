@@ -7,20 +7,19 @@
 <h2>Fabulous Feet</h2>
 
 @*you'll want to edit this page. maybe pics and titles only*@
-@*maybe make the title of the shoe the link to the details. you did it in travel review*@
+@*maybe make the title of the shoe to link to the details. you did it in travel review*@
 
-@*<p>
-    @Html.ActionLink("Add More Shoes!", "Create")
-</p>*@
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ShoeName)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.Photo)
         </th>
         <th>
+            @*@Html.DisplayNameFor(model => model.ShoeName)*@
+            Details
+        </th>
+
+        @*<th>
             @Html.DisplayNameFor(model => model.Type)
         </th>
         <th>
@@ -28,30 +27,32 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Style)
-        </th>
+        </th>*@
         <th>
-            @Html.DisplayNameFor(model => model.Occasion)
+            @*@Html.DisplayNameFor(model => model.Occasion)*@
+            Recommended for
         </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShoeName)
-        </td>
 
         @*you're about to tinker with this, to get photos to show:*@
+
         <td>
             @*original line:*@
             @*@Html.DisplayFor(modelItem => item.Photo)*@
 
-            @*attempts: anything coded out doesn't work*@
-            @*@Url.Content(Model.Photo)*@
             <img id="clothingInList" src=@Url.Content(item.Photo) class="img-responsive">
-
         </td>
+
         <td>
+            @*@Html.DisplayFor(modelItem => item.ShoeName)*@
+            @Html.ActionLink(item.ShoeName, "Details", new { id = item.FeetID })
+        </td>
+
+        @*<td>
             @Html.DisplayFor(modelItem => item.Type)
         </td>
         <td>
@@ -59,13 +60,13 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Style)
-        </td>
+        </td>*@
         <td>
             @Html.DisplayFor(modelItem => item.Occasion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.FeetID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.FeetID }) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.FeetID }) <br/>
+            @*@Html.ActionLink("Details", "Details", new { id=item.FeetID }) |*@
             @Html.ActionLink("Delete", "Delete", new { id=item.FeetID })
         </td>
     </tr>

@@ -4,13 +4,13 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Outrageous Outfits!</h2>
-
+<h2>Complete Costumes!</h2>
 
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.OutfitName)
+            @*@Html.DisplayNameFor(model => model.OutfitName)*@
+            Costume
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Top.TopName)
@@ -25,10 +25,9 @@
             @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
         </th>
 
-
-
-
-        <th></th>
+        <th>
+            @*left blank for edit buttons*@
+        </th>
     </tr>
 
     @*below, you added the second line to (hopefully) include photos. WORKS.*@
@@ -59,8 +58,7 @@
 
         </td>
 
-
-        @*try to put edit details delete on separate lines in that table item*@
+        @*try to put edit details delete on separate lines in that table item. DONE*@
 
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) <br/>
@@ -73,5 +71,5 @@
 </table>
 
 <p>
-    @Html.ActionLink("Build and save your own outfits", "Create")
+    @Html.ActionLink("Create Your Own Costume!", "Create")
 </p>

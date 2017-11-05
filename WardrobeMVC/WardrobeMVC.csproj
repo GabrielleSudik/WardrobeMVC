@@ -232,9 +232,11 @@
     <Content Include="Content\bottombootyshorts.jpg" />
     <Content Include="Content\bottomfishnets.jpg" />
     <Content Include="Content\bottomirishskirt.jpg" />
+    <Content Include="Content\bottompolish.jpg" />
     <Content Include="Content\bottomtutu.jpg" />
     <Content Include="Content\flairirishhat.jpg" />
     <Content Include="Content\flairkneepad.jpg" />
+    <Content Include="Content\flairpolishscarf.jpg" />
     <Content Include="Content\flairrose.jpg" />
     <Content Include="Content\flairtiara.jpg" />
     <Content Include="Content\flairtophat.jpg" />
@@ -244,10 +246,12 @@
     <Content Include="Content\p1shoesintro.jpg" />
     <Content Include="Content\p1topsintro.jpg" />
     <Content Include="Content\shoesirish.jpg" />
+    <Content Include="Content\shoespolish.jpg" />
     <Content Include="Content\topballroomshirt.jpg" />
     <Content Include="Content\topbrassier.jpg" />
     <Content Include="Content\topirishjacket.jpg" />
     <Content Include="Content\topleotard.jpg" />
+    <Content Include="Content\toppolish.jpg" />
     <Content Include="Content\topsilverjacket.jpg" />
     <Content Include="Content\toptuxjacket.jpg" />
     <Content Include="favicon.ico" />

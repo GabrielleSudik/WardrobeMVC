@@ -2,64 +2,80 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="plainIntro">
-    <h1 class="lead">The Green Room</h1>
-    <h2 class="lead">Where dancers design their costumes.</h2>
-    @*<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+<div class="Jumbotron">
+    <h1>The Green Room</h1>
+    <h2>Where dancers design their costumes.</h2>
 </div>
 
 <div class="row">
-    <div class="col-md-3">
-        <div class="topsIntro">
-            @*<h2>Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>*@
+    <h2 class="center">
+        Browse our inventory:
+    </h2>
+</div>
 
-            @*you're gonna try making the button large OR making the whole pick the button*@
-            @*also making it link to tops, not a website.*@
+    <div class="row">
+        <div class="col-md-3">
+            <div class="fourIntro">
 
-            <p>
-                Tops
-                @*<a href="Url.Action("Index", "Tops")">*@
-                    <a> <img src="~/Content/p1topsintro.jpg" alt="sparkly tank top" />
-                @Url.Action("Tops", "Tops")
+                @*you're gonna try making the the whole pick the button*@
+                @*or making it link to clothing. DONE*@
+
+                <h3>
+                    Tops
+                </h3>
+                <p>
+                    <a href=@Url.Action( "Index", "Tops")>
+                        <img src="~/Content/p1topsintro.jpg" alt="sparkly tank top" />
                     </a>
-            </p>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="fourIntro">
+                <h3>
+                    Bottoms
+                </h3>
+                <p>
+                    <a href=@Url.Action( "Index", "Bottoms")>
+                        <img src="~/Content/p1bottomsintro.jpg" alt="dance pants" />
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="fourIntro">
+                <h3>Feet</h3>
+                <p>
+                    <a href=@Url.Action( "Index", "Feet")>
 
-            @*<p><a class="btn btn-default" href=@Html.ActionLink("Tops", "Index", "Tops")></a></p>*@
+                        <img src="~/Content/p1shoesintro.jpg" alt="tap shoes" />
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="fourIntro">
+                <h3>Flair</h3>
+                <p>
+                    <a href=@Url.Action( "Index", "Accessories")>
+
+                        <img src="~/Content/p1flairintro.jpg" alt="fan" />
+                    </a>
+                </p>
+            </div>
         </div>
     </div>
-    <div class="col-md-3">
-        <div class="bottomsIntro">
-            
-            <p><a class="btn btn-default" href="Url.Action("Index, "Bottoms")">Bottoms &raquo;</a></p>
-        </div>
-        </div>
-    <div class="col-md-3">
-        <div class="feetIntro">
-            <h2>Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </div>
-        </div>
-    <div class="col-md-3">
-        <div class="flairIntro">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </div>
-        </div>
-</div>
 
-<div class="jumbotron">
-    <h2>Ready-made costumes</h2>
-    <p class="lead">Need a full outfit? Check out our ready-made outfits. Or build your own for others to use!</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <div class="jumbotron">
+        <h2>Costume Creation</h2>
+        <p class="lead">
+            Need a costume? Check out our ready-made creations.<br />
+            Or design your own for others to wear!
+        </p>
+        <p>
+            <a href=@Url.Action("Index", "Outfits")
+               class="btn btn-primary btn-lg">
+                Costumes
+            </a>
+        </p>
+    </div>
