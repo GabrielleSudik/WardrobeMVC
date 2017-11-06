@@ -11,68 +11,31 @@
 
 @*you're going to remove the titles, try to reorg the info at the bottom of the pic.*@
 
+@*you deleted a LOT of boilerplate code to reorg this page*@
+
+@*you like it. use this code as the template for other 3 articles*@
+
 <div>
     @*<h4>Foot</h4>*@
     <hr />
-    <dl class="dl-horizontal">
-        @*<dt>
-            @Html.DisplayNameFor(model => model.ShoeName)
-        </dt>*@
 
-        @*<dd>
-            @Html.DisplayFor(model => model.ShoeName)
-        </dd>*@
+    @*here's your new stuff:*@
+        <div class="row">
+            <div class="col-md-3 detailText">
 
-        @*<dt>
-            @Html.DisplayNameFor(model => model.Photo)
+                @Html.DisplayFor(model => model.Color) @Html.DisplayFor(model => model.Style) @Html.DisplayFor(model => model.Type)
+            </div>
+            <div class="col-md-6 detailText">
 
-        </dt>*@
+                <img class="clothingInDetail" src=@Url.Content(Model.Photo) class="img-responsive">
+                </div>
 
-        <dd>
-            @*you're editing the following:*@
-            @*@Html.DisplayFor(model => model.Photo)*@
-
-            @*here's your new stuff:*@
-            <img id="clothingInDetail" src=@Url.Content(Model.Photo) class="img-responsive">
-
-        </dd>
-
-        @*<dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>*@
-
-        <dd>
-            @Html.DisplayFor(model => model.Color) @Html.DisplayFor(model => model.Style) @Html.DisplayFor(model => model.Type) 
-        </dd>
-
-        @*<dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>*@
-
-        @*<dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>*@
-
-        @*<dt>
-            @Html.DisplayNameFor(model => model.Style)
-        </dt>*@
-
-        @*<dd>
-            @Html.DisplayFor(model => model.Style)
-        </dd>*@
-
-        <dt>
-            @*@Html.DisplayNameFor(model => model.Occasion)*@
-            Recommended for: 
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
-
-    </dl>
+            <div class="col-md-3 detailText">
+                Recommended for: @Html.DisplayFor(model => model.Occasion)
+                </div>
+            </div>
 </div>
-<p>
+<p class="followMe">
     @Html.ActionLink("Edit", "Edit", new { id = Model.FeetID }) |
     @Html.ActionLink("Back to All Shoes", "Index")
 </p>

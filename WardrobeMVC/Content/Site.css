@@ -52,6 +52,11 @@ textarea {
     max-width: 250px;
 }
 
+.clothingInDetail{
+    width: 335px;
+    height: auto;
+}
+
 .lead{
     /*font-size: 120%;*/
 }
@@ -84,6 +89,16 @@ textarea {
 
 .btn:hover{
     background-color: darkgray;
+}
+
+.followMe{
+    font-size: 150%;
+    color: black;
+}
+
+.detailText{
+    text-align: center;
+    font-size: 150%;
 }
 
 footer{

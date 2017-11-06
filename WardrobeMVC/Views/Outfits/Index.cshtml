@@ -31,29 +31,35 @@
     </tr>
 
     @*below, you added the second line to (hopefully) include photos. WORKS.*@
+    @*now make more things links. DONE*@
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.OutfitName)
+            @*@Html.DisplayFor(modelItem => item.OutfitName)*@
+            @Html.ActionLink(item.OutfitName, "Details", new { id = item.OutfitID })
         </td>
+
+        @*can you make the photos link to their details? Not yet lol.*@
+
         <td>
-            @Html.DisplayFor(modelItem => item.Top.TopName)
+            @*@Html.DisplayFor(modelItem => item.Top.TopName)*@
             <img id="clothingInList" src=@Url.Content(item.Top.Photo) class="img-responsive">
+
 
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Bottom.TopName)
+            @*@Html.DisplayFor(modelItem => item.Bottom.TopName)*@
             <img id="clothingInList" src=@Url.Content(item.Bottom.Photo) class="img-responsive">
 
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Foot.ShoeName)
+            @*@Html.DisplayFor(modelItem => item.Foot.ShoeName)*@
             <img id="clothingInList" src=@Url.Content(item.Foot.Photo) class="img-responsive">
 
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Accessory.AccessoryName)
+            @*@Html.DisplayFor(modelItem => item.Accessory.AccessoryName)*@
             <img id="clothingInList" src=@Url.Content(item.Accessory.Photo) class="img-responsive">
 
         </td>
@@ -62,7 +68,7 @@
 
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) <br/>
-            @Html.ActionLink("Details", "Details", new { id=item.OutfitID }) <br />
+            @*@Html.ActionLink("Details", "Details", new { id=item.OutfitID }) <br />*@
             @Html.ActionLink("Delete", "Delete", new { id=item.OutfitID })
         </td>
     </tr>
@@ -70,6 +76,6 @@
 
 </table>
 
-<p>
+<p class="followMe">
     @Html.ActionLink("Create Your Own Costume!", "Create")
 </p>

@@ -23,7 +23,9 @@ namespace WardrobeMVC
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            // you're changing plain bootstrap to -[something from bootswatch]
+            // you prefered the basic bootstrap style to all the bootswatch ones
+            //so you just changed styles in site.css
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));

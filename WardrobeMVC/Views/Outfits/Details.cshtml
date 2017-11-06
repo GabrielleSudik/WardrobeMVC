@@ -14,19 +14,32 @@ to try, you copied the razor from below. WORKED*@
 <div>
     @*<h4>Outfit</h4>*@
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal followMe">
+
         <dt>
-            @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
+            @Html.DisplayNameFor(model => model.Top.TopName)
         </dt>
 
         @*you're changing "ThingName" to "Photo" in each row*@
         @*and adding the img syntax instead of displaying text*@
 
         <dd>
-            @*@Html.DisplayFor(model => model.Accessory.Photo)*@
-            <img id="clothingInDetail" src=@Url.Content(Model.Accessory.Photo) class="img-responsive">
+            @*@Html.DisplayFor(model => model.Top.Photo)*@
+            <img id="clothingInDetail" src=@Url.Content(Model.Top.Photo) class="img-responsive">
 
         </dd>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.Top.TopName)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.Top.Color) 
+            @Html.DisplayFor(model => model.Top.Style) 
+            @Html.DisplayFor(model => model.Top.Type)
+        </dd>
+       
 
         <dt>
             @Html.DisplayNameFor(model => model.Bottom.TopName)
@@ -38,6 +51,17 @@ to try, you copied the razor from below. WORKED*@
 
         </dd>
 
+        <dd>
+            @Html.DisplayFor(model => model.Bottom.TopName)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bottom.Color)
+            @Html.DisplayFor(model => model.Bottom.Style)
+            @Html.DisplayFor(model => model.Bottom.Type)
+        </dd>
+
+
         <dt>
             @Html.DisplayNameFor(model => model.Foot.ShoeName)
         </dt>
@@ -48,15 +72,38 @@ to try, you copied the razor from below. WORKED*@
 
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Top.TopName)
-        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Foot.ShoeName)
+        </dd>
 
         <dd>
-            @*@Html.DisplayFor(model => model.Top.Photo)*@
-            <img id="clothingInDetail" src=@Url.Content(Model.Top.Photo) class="img-responsive">
+            @Html.DisplayFor(model => model.Foot.Color)
+            @Html.DisplayFor(model => model.Foot.Style)
+            @Html.DisplayFor(model => model.Foot.Type)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
+        </dt>
+
+
+        <dd>
+            @*@Html.DisplayFor(model => model.Accessory.Photo)*@
+            <img id="clothingInDetail" src=@Url.Content(Model.Accessory.Photo) class="img-responsive">
 
         </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory.AccessoryName)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory.Color)
+            @Html.DisplayFor(model => model.Accessory.Style)
+            @Html.DisplayFor(model => model.Accessory.Type)
+        </dd>
+
 
         @*if change to headline worked, you can delete this part totally. DONE*@
 
@@ -70,7 +117,7 @@ to try, you copied the razor from below. WORKED*@
 
     </dl>
 </div>
-<p>
+<p class="followMe">
     @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
     @Html.ActionLink("Back to all Outfits", "Index")
 </p>
