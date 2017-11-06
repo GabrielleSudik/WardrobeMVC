@@ -15,8 +15,6 @@
 }
 
 .navbar {
-    /*background-color: #004400; /*dark green*/
-    /*color: #88CC88; /*light green*/
     font-size: 120%;
 }
 
@@ -57,34 +55,15 @@ textarea {
     height: auto;
 }
 
-.lead{
-    /*font-size: 120%;*/
-}
-
 .fourIntro{
     text-align: center;
-}
-.topsIntro {
-    /*background-image: url('p1topsintro.jpg');*/
-}
-
-.bottomIntro {
-    /*background-image: url('p1bottomsintro.jpg');*/
-}
-
-.feetIntro {
-    /*background-image: url('p1shoesintro.jpg');*/
-}
-
-.flairIntro {
-    /*background-image: url('p1flairintro.jpg');*/
 }
 
 .btn{
     background-color: black;
     color: white;
     border: black;
-    border-radius: 50%;
+    border-radius: 50%; /*makes a circle*/
 }
 
 .btn:hover{
@@ -102,7 +81,5 @@ textarea {
 }
 
 footer{
-    /*background-color: #004400; /*dark green*/
-    /*color: #88CC88; /*light green*/
     font-size: 150%;
 }

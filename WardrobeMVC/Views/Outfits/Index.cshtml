@@ -12,6 +12,7 @@
             @*@Html.DisplayNameFor(model => model.OutfitName)*@
             Costume
         </th>
+
         <th>
             @Html.DisplayNameFor(model => model.Top.TopName)
         </th>
@@ -40,31 +41,24 @@
             @Html.ActionLink(item.OutfitName, "Details", new { id = item.OutfitID })
         </td>
 
-        @*can you make the photos link to their details? Not yet lol.*@
+  @*can you make the photos link to their details? your attempts didn't work.*@
 
         <td>
             @*@Html.DisplayFor(modelItem => item.Top.TopName)*@
             <img id="clothingInList" src=@Url.Content(item.Top.Photo) class="img-responsive">
-
-
         </td>
         <td>
             @*@Html.DisplayFor(modelItem => item.Bottom.TopName)*@
             <img id="clothingInList" src=@Url.Content(item.Bottom.Photo) class="img-responsive">
-
         </td>
         <td>
             @*@Html.DisplayFor(modelItem => item.Foot.ShoeName)*@
             <img id="clothingInList" src=@Url.Content(item.Foot.Photo) class="img-responsive">
-
         </td>
         <td>
             @*@Html.DisplayFor(modelItem => item.Accessory.AccessoryName)*@
             <img id="clothingInList" src=@Url.Content(item.Accessory.Photo) class="img-responsive">
-
         </td>
-
-        @*try to put edit details delete on separate lines in that table item. DONE*@
 
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) <br/>

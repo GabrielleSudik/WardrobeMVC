@@ -6,7 +6,6 @@
 
 <h2>Tubular Tops</h2>
 
-
 <table class="table">
     <tr>
         <th>
@@ -40,7 +39,6 @@
         <td>
             @*@Html.DisplayFor(modelItem => item.Photo)*@
             <img id="clothingInList" src=@Url.Content(item.Photo) class="img-responsive">
-
         </td>
         <td>
             @Html.ActionLink(item.TopName, "Details", new { id = item.TopID })

@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
+//this is a metadata/buddy class. make data annotations here
+
 namespace WardrobeMVC.Models
 {
     [MetadataType(typeof(Top.MetaData))]

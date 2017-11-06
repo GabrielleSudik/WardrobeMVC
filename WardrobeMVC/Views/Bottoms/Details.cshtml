@@ -4,9 +4,11 @@
     ViewBag.Title = "Details";
 }
 
-<h2>@Html.DisplayFor(model => model.TopName)
+@*you made a LOT of changes to the boilerplate code on this page*@
 
 
+<h2>
+    @Html.DisplayFor(model => model.TopName)
 </h2>
 
 <div>
@@ -27,7 +29,6 @@
         </div>
     </div>
 </div>
-
 
 <p class="followMe">
     @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |

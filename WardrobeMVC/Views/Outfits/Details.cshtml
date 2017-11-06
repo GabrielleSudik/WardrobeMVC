@@ -29,7 +29,6 @@ to try, you copied the razor from below. WORKED*@
 
         </dd>
 
-
         <dd>
             @Html.DisplayFor(model => model.Top.TopName)
         </dd>
@@ -39,7 +38,6 @@ to try, you copied the razor from below. WORKED*@
             @Html.DisplayFor(model => model.Top.Style) 
             @Html.DisplayFor(model => model.Top.Type)
         </dd>
-       
 
         <dt>
             @Html.DisplayNameFor(model => model.Bottom.TopName)
@@ -48,7 +46,6 @@ to try, you copied the razor from below. WORKED*@
         <dd>
             @*@Html.DisplayFor(model => model.Bottom.Photo)*@
             <img id="clothingInDetail" src=@Url.Content(Model.Bottom.Photo) class="img-responsive">
-
         </dd>
 
         <dd>
@@ -61,7 +58,6 @@ to try, you copied the razor from below. WORKED*@
             @Html.DisplayFor(model => model.Bottom.Type)
         </dd>
 
-
         <dt>
             @Html.DisplayNameFor(model => model.Foot.ShoeName)
         </dt>
@@ -69,7 +65,6 @@ to try, you copied the razor from below. WORKED*@
         <dd>
             @*@Html.DisplayFor(model => model.Foot.Photo)*@
             <img id="clothingInDetail" src=@Url.Content(Model.Foot.Photo) class="img-responsive">
-
         </dd>
 
         <dd>
@@ -82,16 +77,13 @@ to try, you copied the razor from below. WORKED*@
             @Html.DisplayFor(model => model.Foot.Type)
         </dd>
 
-
         <dt>
             @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
         </dt>
 
-
         <dd>
             @*@Html.DisplayFor(model => model.Accessory.Photo)*@
             <img id="clothingInDetail" src=@Url.Content(Model.Accessory.Photo) class="img-responsive">
-
         </dd>
 
         <dd>
@@ -104,8 +96,7 @@ to try, you copied the razor from below. WORKED*@
             @Html.DisplayFor(model => model.Accessory.Type)
         </dd>
 
-
-        @*if change to headline worked, you can delete this part totally. DONE*@
+        @*if change to headline worked, you can delete this part. DONE*@
 
         @*<dt>
             @Html.DisplayNameFor(model => model.OutfitName)
