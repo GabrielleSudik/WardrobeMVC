@@ -12,7 +12,7 @@ namespace WardrobeMVC.Controllers
 {
     public class TopsController : Controller
     {
-        private WardrobeMVCContext db = new WardrobeMVCContext();
+        private WardrobeMVCEntities1 db = new WardrobeMVCEntities1();
 
         // GET: Tops
         public ActionResult Index()
